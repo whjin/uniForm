@@ -1,9 +1,6 @@
 <template>
 	<view class="content">
-		<image class="logo" src="/static/logo.png"></image>
-		<view class="text-area">
-			<text class="title">{{title}}</text>
-		</view>
+		<button @click="reqServer">请求服务器</button>
 	</view>
 </template>
 
@@ -12,15 +9,20 @@
 		data() {
 			return {
 				title: 'Hello'
-			}
+			};
 		},
-		onLoad() {
-
-		},
+		onLoad() {},
 		methods: {
-
+			async reqServer() {
+				const co1 = uniCloud.importObject("co1")
+				let res = await co1.say('hello uniCloud')
+				uni.showModal({
+					content: JSON.stringify(res),
+					showCancel: false
+				})
+			}
 		}
-	}
+	};
 </script>
 
 <style>
