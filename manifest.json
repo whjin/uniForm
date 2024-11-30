@@ -18,7 +18,10 @@
         },
         /* 模块配置 */
         "modules" : {
-            "SQLite" : {}
+            "SQLite" : {},
+            "VideoPlayer" : {},
+            "Camera" : {},
+            "Record" : {}
         },
         /* 应用发布信息 */
         "distribute" : {
@@ -40,12 +43,22 @@
                     "<uses-permission android:name=\"android.permission.FLASHLIGHT\"/>",
                     "<uses-feature android:name=\"android.hardware.camera\"/>",
                     "<uses-permission android:name=\"android.permission.WRITE_SETTINGS\"/>"
-                ]
+                ],
+                "abiFilters" : [ "armeabi-v7a", "arm64-v8a" ]
             },
             /* ios打包配置 */
             "ios" : {},
             /* SDK配置 */
-            "sdkConfigs" : {}
+            "sdkConfigs" : {
+                "statics" : {
+                    "umeng" : {
+                        "appkey_ios" : "",
+                        "channelid_ios" : "",
+                        "appkey_android" : "",
+                        "channelid_android" : ""
+                    }
+                }
+            }
         }
     },
     /* 快应用特有相关 */
@@ -68,7 +81,8 @@
         "usingComponents" : true
     },
     "uniStatistics" : {
-        "enable" : false
+        "enable" : false,
+        "version" : "2"
     },
     "vueVersion" : "3"
 }
