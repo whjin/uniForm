@@ -1,0 +1,95 @@
+.login-container {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  position: relative;
+  .wrapper {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background: rgba(240, 245, 255, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      image {
+        width: 120upx;
+        height: 120upx;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      .title {
+        font-size: 42upx;
+        color: #333;
+        font-weight: bold;
+        margin-top: 10upx;
+      }
+    }
+    .content {
+      width: 100%;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 30upx;
+      .section {
+        width: 680upx;
+        height: 80upx;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: rgba(255, 255, 255, 0.35);
+        margin-bottom: 30upx;
+        padding: 0 30upx;
+        border: 1upx solid #ebecf4;
+        border-radius: 60upx;
+        image {
+          width: 60upx;
+          height: 60upx;
+        }
+        input {
+          width: 100%;
+          height: 100%;
+          box-sizing: border-box;
+          flex: 1;
+          font-size: 32upx;
+          color: #333;
+          font-weight: 500;
+          padding-left: 16upx;
+        }
+      }
+      .placeholder {
+        font-size: 32upx;
+        color: #999;
+        font-weight: 400;
+      }
+      .pwd-image {
+        width: 48upx;
+        height: 48upx;
+      }
+    }
+    .button {
+      width: 680upx;
+      height: 80upx;
+      background: linear-gradient(90deg, #4f8cf5 0%, #3f74e6 100%);
+      box-shadow: 0 4upx 4upx 0 rgba(0, 0, 0, 0.4);
+      border-radius: 60upx;
+      color: #fff;
+      font-weight: 36upx;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20upx;
+      letter-spacing: 16upx;
+      text-indent: 16upx;
+    }
+  }
+}
