@@ -1,0 +1,237 @@
+{
+  "@platforms": [
+    "android",
+    "iPhone",
+    "iPad"
+  ],
+  "id": "__UNI__53B180B",
+  "name": "值班巡检终端",
+  "version": {
+    "name": "1.0.0",
+    "code": "100"
+  },
+  "description": "值班巡检终端",
+  "developer": {
+    "name": "",
+    "email": "",
+    "url": ""
+  },
+  "permissions": {
+    "SQLite": {},
+    "VideoPlayer": {},
+    "Camera": {},
+    "Record": {},
+    "Bluetooth": {},
+    "LivePusher": {},
+    "Messaging": {},
+    "Barcode": {},
+    "Contacts": {},
+    "Fingerprint": {},
+    "iBeacon": {},
+    "UniNView": {
+      "description": "UniNView原生渲染"
+    }
+  },
+  "plus": {
+    "useragent": {
+      "value": "uni-app",
+      "concatenate": true
+    },
+    "splashscreen": {
+      "target": "id:1",
+      "autoclose": true,
+      "waiting": true,
+      "delay": 0
+    },
+    "popGesture": "close",
+    "launchwebview": {
+      "id": "1",
+      "kernel": "WKWebview"
+    },
+    "usingComponents": true,
+    "nvueStyleCompiler": "uni-app",
+    "compilerVersion": 3,
+    "distribute": {
+      "icons": {
+        "android": {
+          "hdpi": "unpackage/res/icons/72x72.png",
+          "xhdpi": "unpackage/res/icons/96x96.png",
+          "xxhdpi": "unpackage/res/icons/144x144.png",
+          "xxxhdpi": "unpackage/res/icons/192x192.png"
+        },
+        "ios": {
+          "appstore": "unpackage/res/icons/1024x1024.png",
+          "ipad": {
+            "app": "unpackage/res/icons/76x76.png",
+            "app@2x": "unpackage/res/icons/152x152.png",
+            "notification": "unpackage/res/icons/20x20.png",
+            "notification@2x": "unpackage/res/icons/40x40.png",
+            "proapp@2x": "unpackage/res/icons/167x167.png",
+            "settings": "unpackage/res/icons/29x29.png",
+            "settings@2x": "unpackage/res/icons/58x58.png",
+            "spotlight": "unpackage/res/icons/40x40.png",
+            "spotlight@2x": "unpackage/res/icons/80x80.png"
+          },
+          "iphone": {
+            "app@2x": "unpackage/res/icons/120x120.png",
+            "app@3x": "unpackage/res/icons/180x180.png",
+            "notification@2x": "unpackage/res/icons/40x40.png",
+            "notification@3x": "unpackage/res/icons/60x60.png",
+            "settings@2x": "unpackage/res/icons/58x58.png",
+            "settings@3x": "unpackage/res/icons/87x87.png",
+            "spotlight@2x": "unpackage/res/icons/80x80.png",
+            "spotlight@3x": "unpackage/res/icons/120x120.png"
+          }
+        }
+      },
+      "google": {
+        "permissions": [
+          "<uses-feature android:name=\"android.hardware.camera\"/>",
+          "<uses-feature android:name=\"android.hardware.camera.autofocus\"/>",
+          "<uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\"/>",
+          "<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\"/>",
+          "<uses-permission android:name=\"android.permission.ACCESS_LOCATION_EXTRA_COMMANDS\"/>",
+          "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>",
+          "<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\"/>",
+          "<uses-permission android:name=\"android.permission.CALL_PHONE\"/>",
+          "<uses-permission android:name=\"android.permission.CAMERA\"/>",
+          "<uses-permission android:name=\"android.permission.CAPTURE_AUDIO_OUTPUT\"/>",
+          "<uses-permission android:name=\"android.permission.CAPTURE_VIDEO_OUTPUT\"/>",
+          "<uses-permission android:name=\"android.permission.CHANGE_CONFIGURATION\"/>",
+          "<uses-permission android:name=\"android.permission.CHANGE_NETWORK_STATE\"/>",
+          "<uses-permission android:name=\"android.permission.CHANGE_WIFI_STATE\"/>",
+          "<uses-permission android:name=\"android.permission.CLEAR_APP_CACHE\"/>",
+          "<uses-permission android:name=\"android.permission.CLEAR_APP_USER_DATA\"/>",
+          "<uses-permission android:name=\"android.permission.DELETE_CACHE_FILES\"/>",
+          "<uses-permission android:name=\"android.permission.DELETE_PACKAGES\"/>",
+          "<uses-permission android:name=\"android.permission.FLASHLIGHT\"/>",
+          "<uses-permission android:name=\"android.permission.GET_ACCOUNTS\"/>",
+          "<uses-permission android:name=\"android.permission.INSTALL_PACKAGES\"/>",
+          "<uses-permission android:name=\"android.permission.INTERNET\"/>",
+          "<uses-permission android:name=\"android.permission.MODIFY_AUDIO_SETTINGS\"/>",
+          "<uses-permission android:name=\"android.permission.MOUNT_UNMOUNT_FILESYSTEMS\"/>",
+          "<uses-permission android:name=\"android.permission.NFC\"/>",
+          "<uses-permission android:name=\"android.permission.READ_CONTACTS\"/>",
+          "<uses-permission android:name=\"android.permission.READ_EXTERNAL_STORAGE\"/>",
+          "<uses-permission android:name=\"android.permission.READ_LOGS\"/>",
+          "<uses-permission android:name=\"android.permission.READ_PHONE_STATE\"/>",
+          "<uses-permission android:name=\"android.permission.RECORD_AUDIO\"/>",
+          "<uses-permission android:name=\"android.permission.REORDER_TASKS\"/>",
+          "<uses-permission android:name=\"android.permission.REQUEST_INSTALL_PACKAGES\"/>",
+          "<uses-permission android:name=\"android.permission.SET_TIME\"/>",
+          "<uses-permission android:name=\"android.permission.UPDATE_DEVICE_STATS\"/>",
+          "<uses-permission android:name=\"android.permission.USE_FINGERPRINT\"/>",
+          "<uses-permission android:name=\"android.permission.VIBRATE\"/>",
+          "<uses-permission android:name=\"android.permission.WAKE_LOCK\"/>",
+          "<uses-permission android:name=\"android.permission.WRITE_CONTACTS\"/>",
+          "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\"/>",
+          "<uses-permission android:name=\"android.permission.WRITE_PROFILE\"/>",
+          "<uses-permission android:name=\"android.permission.WRITE_SECURE_SETTINGS\"/>",
+          "<uses-permission android:name=\"android.permission.WRITE_SETTINGS\"/>",
+          "<uses-permission android:name=\"android.permission.WRITE_SYNC_SETTINGS\"/>"
+        ],
+        "abiFilters": [
+          "armeabi-v7a",
+          "arm64-v8a",
+          "x86"
+        ],
+        "minSdkVersion": "",
+        "targetSdkVersion": ""
+      },
+      "apple": {
+        "idfa": false,
+        "dSYMs": false
+      },
+      "plugins": {
+        "audio": {
+          "mp3": {
+            "description": "Android平台录音支持MP3格式文件"
+          }
+        }
+      }
+    },
+    "uniStatistics": {
+      "enable": false,
+      "version": "2"
+    },
+    "statusbar": {
+      "immersed": "supportedDevice",
+      "style": "dark",
+      "background": "#000000"
+    },
+    "allowsInlineMediaPlayback": true,
+    "safearea": {
+      "background": "#fff",
+      "bottom": {
+        "offset": "auto"
+      }
+    },
+    "uni-app": {
+      "control": "uni-v3",
+      "vueVersion": "3",
+      "compilerVersion": "4.45",
+      "nvueCompiler": "uni-app",
+      "renderer": "auto",
+      "nvue": {
+        "flex-direction": "column"
+      },
+      "nvueLaunchMode": "normal",
+      "webView": {
+        "minUserAgentVersion": "49.0"
+      }
+    },
+    "tabBar": {
+      "position": "bottom",
+      "color": "#000",
+      "selectedColor": "#007aff",
+      "borderStyle": "#000",
+      "blurEffect": "none",
+      "fontSize": "16upx",
+      "iconWidth": "36upx",
+      "spacing": "14upx",
+      "height": "80px",
+      "list": [
+        {
+          "pagePath": "pages/check/check",
+          "iconPath": "/static/images/tabs/check.png",
+          "selectionIconPath": "static/images/tabs/check_selected.png",
+          "text": "巡检"
+        },
+        {
+          "pagePath": "pages/record/record",
+          "iconPath": "/static/images/tabs/record.png",
+          "selectionIconPath": "static/images/tabs/record_selected.png",
+          "text": "台账"
+        },
+        {
+          "pagePath": "pages/personal/personal",
+          "iconPath": "/static/images/tabs/personal.png",
+          "selectionIconPath": "static/images/tabs/personal_selected.png",
+          "text": "我的"
+        }
+      ],
+      "selectionedColor": "#0080ff",
+      "backgroundColor": "#fff",
+      "selectedIndex": 0,
+      "shown": true
+    }
+  },
+  "app-harmony": {
+    "useragent": {
+      "value": "uni-app",
+      "concatenate": true
+    },
+    "uniStatistics": {
+      "enable": false,
+      "version": "2"
+    },
+    "safearea": {
+      "background": "#fff",
+      "bottom": {
+        "offset": "auto"
+      }
+    }
+  },
+  "locale": "auto",
+  "launch_path": "__uniappview.html"
+}

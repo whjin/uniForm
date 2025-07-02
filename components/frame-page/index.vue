@@ -1,7 +1,7 @@
 <template>
   <view class="frame-container" :data-theme="currentTheme" :style="getStyle" @click.stop="onTouch">
     <view class="frame-main">
-      <view class="frame-header">
+      <view class="frame-header" @click="toggleTheme">
         <view class="title">值班巡检终端</view>
       </view>
       <view class="frame-content">
@@ -31,6 +31,10 @@ onBackPress(() => {
 
 const onTouch = () => {
   emit('onTouch');
+};
+
+const toggleTheme = () => {
+  store.dispatch('toggleTheme');
 };
 </script>
 
