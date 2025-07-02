@@ -1,0 +1,31 @@
+.frame-container,
+.frame-main {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  background-color: var(--primary-page-background);
+}
+.frame-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .frame-header {
+    width: 100%;
+    height: 9%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    position: relative;
+    .title {
+      position: absolute;
+      left: 30upx;
+      top: 50%;
+      transform: translateY(-50%);
+      font-weight: bold;
+      font-size: 40upx;
+      text-shadow: 0 4upx 10upx #00214a09;
+      color: #fff;
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "pages": [
+    {
+      "path": "pages/login/index",
+      "style": {
+        "navigationBarTitleText": "登录"
+      }
+    },
+    {
+      "path": "pages/check/check",
+      "style": {
+        "navigationBarTitleText": "巡检"
+      }
+    },
+    {
+      "path": "pages/record/record",
+      "style": {
+        "navigationBarTitleText": "台账"
+      }
+    },
+    {
+      "path": "pages/personal/personal",
+      "style": {
+        "navigationBarTitleText": "我的"
+      }
+    }
+  ],
+  "tabBar": {
+    "color": "#000",
+    "selectionedColor": "#0080ff",
+    "borderStyle": "#000",
+    "backgroundColor": "#fff",
+    "height": "80upx",
+    "fontSize": "16upx",
+    "iconWidth": "36upx",
+    "spacing": "14upx",
+    "list": [
+      {
+        "pagePath": "pages/check/check",
+        "iconPath": "static/images/tabs/check.png",
+        "selectionIconPath": "static/images/tabs/check_selected.png",
+        "text": "巡检"
+      },
+      {
+        "pagePath": "pages/record/record",
+        "iconPath": "static/images/tabs/record.png",
+        "selectionIconPath": "static/images/tabs/record_selected.png",
+        "text": "台账"
+      },
+      {
+        "pagePath": "pages/personal/personal",
+        "iconPath": "static/images/tabs/personal.png",
+        "selectionIconPath": "static/images/tabs/personal_selected.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "globalStyle": {
+    "navigationStyle": "custom"
+  }
+}
